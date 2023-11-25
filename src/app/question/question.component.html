@@ -1,0 +1,11 @@
+<div>
+
+    <p>{{ currentQuestion.questionText }}</p>
+    <div *ngFor="let answer of currentQuestion.answers">
+      <input type="radio" name="answer" [value]="answer.value" (change)="selectAnswer(answer)">
+      {{ answer.text }}
+    </div>
+    <!-- <ibm-button>Hello, IBM Carbon Button!</ibm-button> -->
+    <!-- <button (click)="nextQuestion()" [disabled]="!selectedAnswer">Next</button> -->
+    <button (click)="nextQuestion()" class="bx--btn bx--btn--primary" [disabled]="!(selectedAnswer > -1)">Choose your destiny</button>
+  </div>
