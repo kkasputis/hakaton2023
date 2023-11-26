@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 export interface Answer {
   text: string;
@@ -27,7 +28,15 @@ export class SubmissionComponent {
   @Input() selectAnswer: Function = () => {};;
   @Input() nextQuestion: Function = () => {};;
   @Input() selectedAnswer: number = -1;
-  constructor(private cd: ChangeDetectorRef) {
+  constructor(private cd: ChangeDetectorRef, private router: Router) {
     // ...
   }
+ 
+  goToGamePage() {
+    this.router.navigate(['/game']); 
+  }
+  goToWeekPage() {
+    this.router.navigate(['/week']); 
+  }
+
 }

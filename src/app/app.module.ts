@@ -6,13 +6,18 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'carbon-components-angular/button';
 import { QuestionComponent } from './question/question.component';
 import { SubmissionComponent } from './submission/submission.component';
+import { GameComponent } from './game/game.component';
+import { WeekComponent } from './week/week.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionComponent,
-    SubmissionComponent
+    SubmissionComponent,
+    GameComponent,
+    WeekComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+<router-outlet>
 <div>
 
     <p>{{ currentQuestion.questionText }}</p>
@@ -9,3 +10,4 @@
     <!-- <button (click)="nextQuestion()" [disabled]="!selectedAnswer">Next</button> -->
     <button (click)="nextQuestion()" class="bx--btn bx--btn--primary" [disabled]="!(selectedAnswer > -1)">Choose your destiny</button>
   </div>
+</router-outlet>

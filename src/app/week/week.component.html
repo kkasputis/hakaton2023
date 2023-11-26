@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Week</title>
+  </head>
+  <body>
+    <router-outlet>
+    <div class="outer">
+      <div class="mbody">
+        <div class="logoContainer">
+          <img class="logo" src="assets/logo_black.png" />
+        </div>
+        <br />
+        <div class="dayHolder">
+          <div>
+            <img (click)="goToGamePage()" class="imageDay" src="assets/day1.png" />
+          </div>
+          <br />
+          <div class="imageDateHolder">
+            <div class="imageSmallHolder">
+              <img class="imageSmall" src="assets/day1small.png" />
+            </div>
+            <div>
+              <br />
+              <h4 typewriter>Day 1</h4>
+              <h5 typewriterGrey>Nov 24 2023</h5>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="dayHolder">
+          <div>
+            <img (click)="goToGamePage()" class="imageDay" src="assets/day2.png" />
+          </div>
+          <br />
+          <div class="imageDateHolder">
+            <div class="imageSmallHolder">
+              <img class="imageSmall" src="assets/day2small.png" />
+            </div>
+            <div>
+              <br />
+              <h4 typewriter>Day 2</h4>
+              <h5 typewriterGrey>Nov 25 2023</h5>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <img (click)="goToMainPage()" class="icons1" src="assets/return.png" />
+        </div>
+      </div>
+    </div>
+</router-outlet>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.outer {
+ background-size: cover;
+ background-color: #D2B48C;
+ background-attachment: fixed;
+ padding: 10px;
+ border-radius: 10px;
+}
+
+.mbody {
+ margin: auto;
+ padding: 20px;
+ max-width: 800px;
+ text-align: center;
+ background-image: url("../../assets/background1.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+.mbody {
+ margin: auto;
+ padding: 20px;
+ max-width: 700px;
+ text-align: center;
+ background-image: url("../../assets/background1.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-radius: 10px;
+ }
+}
+
+@media only screen and (max-width: 800px) {
+.mbody {
+ margin: auto;
+ padding: 20px;
+ max-width: 650px;
+ text-align: center;
+ background-image: url("../../assets/background1.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-radius: 10px;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+.mbody {
+ margin: auto;
+ padding: 10px;
+ max-width: 500px;
+ text-align: center;
+ background-image: url("../../assets/background1.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-radius: 10px;
+ }
+}
+
+.dateHolder {
+  margin: auto;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     width: 80%;
+}
+
+.tableHolder {
+  margin: auto;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     width: 50%;
+}
+
+.date1 {
+ display: inline-block;
+ float: left;
+}
+
+.date2 {
+ display: inline-block;
+ float: right;
+}
+
+.container {
+ margin: auto;
+ text-align: center;
+}
+
+.logo {
+ text-align: center;
+ width: 180px;
+ color: black;
+}
+
+.iconsMenuPlay {
+ width: 55%;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ background-color: transparent;
+}
+
+.icons1 {
+ width: 80px;
+ background-color: transparent;
+}
+
+.icons2 {
+ width: 100px;
+ background-color: transparent;
+}
+
+h5 {
+font-family: typewriter;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 30px;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+  table {
+    width: 100%;
+  }
+
+td {
+    margin: 20px;
+    width: 33.3%;
+    height: 33.3%;
+  }
+
+  .over {
+   position: absolute;
+   margin-left: -85px;
+  }
+
+  span {
+    content: "\2713";
+    color: 	#008000;
+    text-color: #008000;
+  }
+
+.day {
+ color: #008000;
+}

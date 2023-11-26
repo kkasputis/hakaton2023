@@ -1,0 +1,186 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.outer {
+  background-size: cover;
+  background-color: #d2b48c;
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.mbody {
+  margin: auto;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  background-image: url("../../assets/background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mbody {
+    margin: auto;
+    padding: 20px;
+    max-width: 700px;
+    text-align: center;
+    background-image: url("../../assets/background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .mbody {
+    margin: auto;
+    padding: 20px;
+    max-width: 650px;
+    text-align: center;
+    background-image: url("../../assets/background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mbody {
+    margin: auto;
+    padding: 10px;
+    max-width: 500px;
+    text-align: center;
+    background-image: url("../../assets/background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+}
+
+.dayHolder {
+  margin: auto;
+  display: block;
+  width: 90%;
+  background-color: #d2b48c;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.imageDateHolder {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.tableHolder {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 50%;
+}
+
+.date1 {
+  display: inline-block;
+  float: left;
+}
+
+.date2 {
+  display: inline-block;
+  float: right;
+}
+
+.container {
+  /* margin: auto; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  text-align: left;
+}
+
+.logoContainer {
+  margin: auto;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  width: 180px;
+  color: black;
+}
+
+.iconsMenuPlay {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+.icons1 {
+  width: 80px;
+  background-color: transparent;
+}
+
+.icons2 {
+  width: 100px;
+  background-color: transparent;
+}
+
+h4 {
+  font-family: typewriter;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: typewriter;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 20px;
+  color: grey;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  margin: 20px;
+  width: 33.3%;
+  height: 33.3%;
+}
+
+.over {
+  position: absolute;
+  margin-left: -85px;
+}
+
+span {
+  content: "\2713";
+  color: #008000;
+  text-color: #008000;
+}
+
+.day {
+  color: #008000;
+}
+
+.imageSmall {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.imageSmallHolder {
+  width: 20%;
+  padding-right: 30px;
+}
+
+.imageDay {
+  width: 100%;
+  border-radius: 10px;
+}

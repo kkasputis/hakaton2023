@@ -1,6 +1,80 @@
-<div>
-  <img src="assets/dead.png" alt="Question Image">
-  
-  You are dead, motherfucker! 
-  <button (click)="retry()" class="bx--btn bx--btn--primary">Start</button>
+<!DOCTYPE html>
+
+<html>
+<head>
+<!--  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>-->
+<!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+<!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+</head>
+<router-outlet>
+<div class="outer">
+  <div class="mbody">
+
+    <div class="container">
+      <img class="logo" src="assets/logo_black.png" alt="Question Image">
+    </div>
+    <div class="dateHolder">
+      <div class="date1">
+        <h5 class="typewriter">Today</h5>
+      </div>
+      <div class="date2">
+        <h5 class="typewriter">Nov 26 2023</h5>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="tableHolder">
+      <!-- <table>
+        <tr>
+          <td><img class="icons1" src="assets/smol/x_red.png"></td>
+          <td><img class="icons1" src="assets/smol/check_green.png"></td>
+        </tr>
+
+      </table> -->
+    </div>
+    <br>
+    <div class="tableHolder">
+      <table>
+        <tr>
+          <td><img (click)="goToWeekPage()" class="icons2" src="assets/smol/1.jpg"><img (click)="goToWeekPage()" class="icons1 over" src="assets/smol/check_green.png"></td>
+          <td><img (click)="goToWeekPage()" class="icons2" src="assets/smol/2.jpg"><img (click)="goToWeekPage()" class="icons1 over" src="assets/smol/check_green.png"></td>
+          <td><img (click)="goToWeekPage()" class="icons2" src="assets/smol/3.jpg"></td>
+        </tr>
+        <br>
+        <tr>
+          <td><img (click)="goToWeekPage()" class="icons2" src="assets/smol/4.jpg"></td>
+          <td><img (click)="goToWeekPage()" class="icons2" src="assets/smol/5.jpg"></td>
+          <td><img (click)="goToWeekPage()" class="icons2" src="assets/smol/6.jpg"></td>
+        </tr>
+        <br>
+        <tr>
+          <td></td>
+          <td><img class="icons2" src="assets/smol/7.jpg"></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <br>
+    <div class="container">
+      <h5 class="day typewriter">DAY 3</h5>
+    </div>
+    <br>
+    <div class="container">
+      <h5 class="typewriter">
+        CONTINUE PLAYING TO SURVIVE
+      </h5>
+    </div>
+    <br>
+    <div class="iconsMenuPlay">
+        <img class="icons1" src="assets/smol/list.png">
+        <img (click)="goToGamePage()" class="icons1" src="assets/smol/play.png">
+    </div>
+
+    <br>
   </div>
+
+</div>
+</router-outlet>
