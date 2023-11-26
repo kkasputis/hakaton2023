@@ -1,46 +1,73 @@
 <!-- <div *ngIf="started === true"> -->
-  <router-outlet>
+    <router-outlet>
 
-  <div *ngIf="currentQuestionIndex < questions.length && showDead === 'yes' && success === false">
-  <div>
-    <img [src]="deathImage" alt="Question Image">
+        <div class="outer">
+          <div class="mbody">
+            <div class="container">
+                <img (click)="goToMainPage()" class="logo" src="assets/logo_black.png" alt="Question Image">
+              </div>
+      <div *ngIf="currentQuestionIndex < questions.length && showDead === 'yes' && success === false">
+        <img class="imageQuestion" [src]="deathImage" alt="Question Image">
+        <br>
+        <br>
+        <div class="outer1">
+          <div class="mbody">
     
-    You are dead, motherfucker! 
-    {{deathText}}
-    <button (click)="retry()" class="bx--btn bx--btn--primary">Retry</button>
+        <div>
+          <p class="dead">You are dead, motherfucker!
+            {{deathText}}</p>
+          <br>
+        </div>
+    
+        <button (click)="retry()" class="button1">Retry</button>
+        </div>
+        </div>
     </div>
-</div>
-<div *ngIf="currentQuestionIndex < questions.length && followUpQuestion === false && dead === false && success === false">
-  <h1>Question {{ currentQuestionIndex + 1 }}</h1>
-  <img [src]="imageLink2" alt="Question Image">
-  <app-question
-    [currentQuestionIndex]="currentQuestionIndex"
-    [currentQuestion]="questions[currentQuestionIndex]"
-    [selectAnswer]="selectAnswer.bind(this)"
-    [nextQuestion]="nextQuestion.bind(this)"
-    [selectedAnswer]="selectedAnswer">
-  </app-question>
-</div>
-
-<div *ngIf="currentQuestionIndex < questions.length && followUpQuestion === true && dead === false && success === false">
-  <h1>Question {{ currentQuestionIndex + 1 }}</h1>
-  <img [src]="imageLink2" alt="Question Image">
-  <app-question
-    [currentQuestionIndex]="currentQuestionIndex"
-    [currentQuestion]="followUpQuestions[currentQuestionIndex]"
-    [selectAnswer]="selectAnswer.bind(this)"
-    [nextQuestion]="nextQuestion.bind(this)"
-    [selectedAnswer]="selectedAnswer"
-    [imageLink2]="imageLink2">
-  </app-question>
-</div>
-<!-- </div> -->
-<div *ngIf="success">
-  <div>You board the bus and it is evacuating you out of the city. You have survived the day.</div>
-<img src="assets/final.jpg">
-<button (click)="goToMainPage()" class="bx--btn bx--btn--primary">Go to start</button>
-</div>
-<!-- <div *ngIf="started === false">
-  <app-submission></app-submission>
-</div> -->
-</router-outlet>
+    <div *ngIf="currentQuestionIndex < questions.length && followUpQuestion === false && dead === false && success === false">
+    <!--  <h2>Question {{ currentQuestionIndex + 1 }}</h2>-->
+      <br>
+      <img class="imageQuestion" [src]="imageLink2" alt="Question Image">
+      <br>
+      <br>
+      <app-question
+        [currentQuestionIndex]="currentQuestionIndex"
+        [currentQuestion]="questions[currentQuestionIndex]"
+        [selectAnswer]="selectAnswer.bind(this)"
+        [nextQuestion]="nextQuestion.bind(this)"
+        [selectedAnswer]="selectedAnswer">
+      </app-question>
+    </div>
+    
+    <div *ngIf="currentQuestionIndex < questions.length && followUpQuestion === true && dead === false && success === false">
+    <!--  <h1>Question {{ currentQuestionIndex + 1 }}</h1>-->
+      <img class="imageQuestion" [src]="imageLink2" alt="Question Image">
+      <br>
+      <br>
+      <app-question
+        [currentQuestionIndex]="currentQuestionIndex"
+        [currentQuestion]="followUpQuestions[currentQuestionIndex]"
+        [selectAnswer]="selectAnswer.bind(this)"
+        [nextQuestion]="nextQuestion.bind(this)"
+        [selectedAnswer]="selectedAnswer"
+        [imageLink2]="imageLink2">
+      </app-question>
+    </div>
+    <!-- </div> -->
+    <div *ngIf="success">
+    
+    <img class="imageQuestion" src="assets/final.jpg">
+      <br>
+      <br>
+      <div class="outer1">
+      <div class="mbody">
+      <p class="survived">You board the bus and it is evacuating you out of the city. You have survived the day.</p>
+      <br>
+        <button (click)="goToStart()" class="button1">Go to start</button>
+        </div>
+    
+      </div>
+    </div>
+    
+          </div>
+        </div>
+    </router-outlet>

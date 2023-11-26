@@ -1,13 +1,19 @@
 <router-outlet>
-<div>
+  <div class="outer">
+    <div class="mbody">
+    <p class="h5">{{ currentQuestion.questionText }}</p>
+      <br>
+    <div class="container" *ngFor="let answer of currentQuestion.answers">
+      <label class="radio-label">
+        <input class="radio-text"type="radio" name="answer" [value]="answer.value" (change)="selectAnswer(answer)">
+        {{ answer.text }}
+      </label>
 
-    <p>{{ currentQuestion.questionText }}</p>
-    <div *ngFor="let answer of currentQuestion.answers">
-      <input type="radio" name="answer" [value]="answer.value" (change)="selectAnswer(answer)">
-      {{ answer.text }}
     </div>
     <!-- <ibm-button>Hello, IBM Carbon Button!</ibm-button> -->
     <!-- <button (click)="nextQuestion()" [disabled]="!selectedAnswer">Next</button> -->
-    <button (click)="nextQuestion()" class="bx--btn bx--btn--primary" [disabled]="!(selectedAnswer > -1)">Choose your destiny</button>
+      <br>
+    <button (click)="nextQuestion()" class="button1" [disabled]="!(selectedAnswer > -1)">CHOOSE</button>
+  </div>
   </div>
 </router-outlet>
